@@ -4,7 +4,7 @@ import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
 import { services } from "@/lib/data";
-import { HiOutlineMail, HiOutlinePhone, HiOutlinePaperAirplane, HiOutlineLocationMarker, HiOutlineClock, HiOutlineGlobe } from "react-icons/hi";
+import { HiOutlineMail, HiOutlinePhone, HiOutlinePaperAirplane, HiOutlineLocationMarker, HiOutlineClock } from "react-icons/hi";
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", phone: "", business: "", service: "", budget: "", message: "" });
@@ -23,19 +23,18 @@ export default function ContactForm() {
   };
 
   const contactInfo = [
-    { icon: HiOutlineLocationMarker, title: "Visit Us", info: ["Raipur, Chhattisgarh, India"] },
-    { icon: HiOutlinePhone, title: "Call / WhatsApp", info: ["+91 7746969000"], href: "tel:+917746969000" },
-    { icon: HiOutlineMail, title: "Email", info: ["rayservices.cg@gmail.com"], href: "mailto:rayservices.cg@gmail.com" },
+    { icon: HiOutlineLocationMarker, title: "Visit Us", info: ["In front of Kota Stadium, Kota, Raipur (492010)"] },
+    { icon: HiOutlinePhone, title: "Call / WhatsApp", info: ["+91-94071-70994"], href: "tel:+919407170994" },
+    { icon: HiOutlineMail, title: "Email", info: ["info@nexgendigital.in"], href: "mailto:info@nexgendigital.in" },
     { icon: HiOutlineClock, title: "Working Hours", info: ["Mon - Sat: 10:00 AM - 7:00 PM"] },
-    { icon: HiOutlineGlobe, title: "Service Area", info: ["All Over India"] },
   ];
 
   return (
     <section id="contact" className="relative section-padding">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="text-center mb-14">
-          <span className="text-primary-light font-semibold text-sm tracking-wider uppercase font-mono">
-            &gt; Get In Touch
+          <span className="text-primary-light font-semibold text-sm tracking-wider uppercase">
+            Get In Touch
           </span>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-3 mb-4">
             Let&apos;s Build Something <span className="gradient-text">Great Together</span>
@@ -107,7 +106,7 @@ export default function ContactForm() {
                     <HiOutlinePaperAirplane className="w-4 h-4" />
                     Send Inquiry
                   </button>
-                  <a href="https://wa.me/917746969000?text=Hello%20Ray%20DIGI%20Studio!%20I%20want%20to%20discuss%20my%20project." target="_blank" rel="noopener noreferrer"
+                  <a href="https://wa.me/919407170994?text=Hello%20NexGen%20Digital!%20I%20want%20to%20discuss%20my%20project." target="_blank" rel="noopener noreferrer"
                     className="px-6 py-3 border border-white/10 text-gray-300 font-medium rounded-lg hover:bg-white/5 transition-colors text-sm flex items-center gap-2">
                     WhatsApp
                   </a>

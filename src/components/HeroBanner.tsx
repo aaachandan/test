@@ -16,31 +16,31 @@ export default function HeroBanner() {
             transition={{ duration: 0.6 }}
             className="space-y-8"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg bg-primary/10 border border-primary/20 text-sm text-primary-light">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse-green" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary-light">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               Raipur, Chhattisgarh — Serving All Over India
             </div>
             <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="text-white">WE BUILD WEBSITES</span>
+              <span className="text-white">Let&apos;s make</span>
               <br />
-              <span className="gradient-text">THAT GROW BUSINESSES</span>
+              <span className="gradient-text">Digital India!</span>
             </h1>
             <p className="text-gray-400 text-lg max-w-xl leading-relaxed">
-              Professional website design, development, branding, landing pages, business websites, restaurant websites, salon websites, NGO websites, healthcare websites and complete digital solutions — crafted for results.
+              We are a leading IT & AI-based digital marketing company in Raipur, Chhattisgarh — transforming businesses with smart, data-powered strategies.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
-                href="/portfolio"
+                href="/contact"
                 className="group inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white font-medium rounded-lg transition-all hover:shadow-lg hover:shadow-primary/25"
               >
-                View Portfolio
+                Start Your Project
                 <HiOutlineArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
-                href="/contact"
+                href="/portfolio"
                 className="px-6 py-3 text-gray-300 font-medium rounded-lg border border-white/10 hover:bg-white/5 transition-colors"
               >
-                Start Your Project
+                View Our Work
               </Link>
             </div>
           </motion.div>
@@ -49,31 +49,44 @@ export default function HeroBanner() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="hidden lg:block"
+            className="hidden lg:block relative"
           >
-            <div className="terminal-bg">
-              <div className="terminal-header">
-                <span className="terminal-dot red" />
-                <span className="terminal-dot yellow" />
-                <span className="terminal-dot green" />
-                <span className="text-gray-500 text-xs ml-2 font-mono">developer@ray-services:~/project</span>
-              </div>
-              <div className="p-6 font-mono text-sm space-y-3">
-                <div className="flex gap-2 text-gray-500">
-                  <span>$</span>
-                  <span>ls -la</span>
-                </div>
-                <div className="text-green-400">mario-game.js  styles.css</div>
-                <div className="flex gap-2 text-gray-500 mt-4">
-                  <span>$</span>
-                  <span>npm run dev</span>
-                </div>
-                <div className="text-yellow-400">
-                  <span className="text-green-400">Live Development</span> ⚡ 120 lines <span className="text-blue-400">🔒 Secured</span>
-                </div>
-                <div className="flex gap-4 text-gray-500 text-xs pt-2 border-t border-gray-700/50">
-                  <span><span className="text-gray-400">&larr; &rarr;</span> Move</span>
-                  <span><span className="text-gray-400">Space</span> Jump</span>
+            <div className="relative w-full aspect-square">
+              <motion.div
+                animate={{ y: [0, -20, 0] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute top-10 left-10 w-32 h-32 rounded-2xl gradient-bg opacity-20 blur-3xl"
+              />
+              <motion.div
+                animate={{ y: [0, 20, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute bottom-20 right-10 w-40 h-40 rounded-full bg-accent opacity-10 blur-3xl"
+              />
+              <div className="relative w-full h-full flex items-center justify-center">
+                <div className="glassmorphism rounded-3xl p-8 w-full max-w-sm">
+                  <div className="space-y-6">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center">
+                        <span className="text-white font-bold">AI</span>
+                      </div>
+                      <div>
+                        <p className="text-white font-semibold text-sm">AI-Powered Solutions</p>
+                        <p className="text-gray-500 text-xs">Smart. Fast. Effective.</p>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      {[
+                        { label: "Website Design", value: "50+" },
+                        { label: "SEO Optimization", value: "200+" },
+                        { label: "Happy Clients", value: "350+" },
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-center justify-between py-2 border-b border-white/5 last:border-0">
+                          <span className="text-gray-400 text-sm">{item.label}</span>
+                          <span className="text-primary-light font-semibold text-sm">{item.value}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

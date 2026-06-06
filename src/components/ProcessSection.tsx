@@ -1,7 +1,14 @@
 "use client";
 
 import ScrollReveal from "./ScrollReveal";
-import { processSteps } from "@/lib/data";
+const processSteps = [
+  { id: 1, step: "01", title: "Discovery", description: "We learn about your business, goals, and target audience." },
+  { id: 2, step: "02", title: "Strategy", description: "We craft a tailored digital strategy aligned with your objectives." },
+  { id: 3, step: "03", title: "Design", description: "Our designers create stunning visuals and intuitive interfaces." },
+  { id: 4, step: "04", title: "Development", description: "We build your solution using cutting-edge technologies." },
+  { id: 5, step: "05", title: "Testing", description: "Rigorous testing ensures everything works flawlessly." },
+  { id: 6, step: "06", title: "Launch & Support", description: "We deploy your project and provide ongoing support." },
+];
 
 export default function ProcessSection() {
   return (

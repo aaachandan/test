@@ -2,8 +2,13 @@
 
 import Link from "next/link";
 import ScrollReveal from "./ScrollReveal";
-import { pricingPlans } from "@/lib/data";
 import { HiOutlineCheck, HiOutlineArrowRight } from "react-icons/hi";
+
+const pricingPlans = [
+  { id: 1, name: "Starter", description: "Perfect for small businesses & startups", price: "4,999", popular: false, features: ["1-Page Website", "Mobile Responsive", "Contact Form", "Social Media Links", "Basic SEO", "1 Month Support", "Free Hosting (1 Year)", "WhatsApp Integration"] },
+  { id: 2, name: "Business", description: "Best for growing businesses", price: "9,999", popular: true, features: ["Up to 5 Pages", "Mobile Responsive", "Contact Form", "Social Media Integration", "Advanced SEO", "3 Months Support", "Free Hosting (1 Year)", "WhatsApp Integration", "Google Maps", "CMS Integration"] },
+  { id: 3, name: "Premium", description: "For businesses that want the best", price: "19,999", popular: false, features: ["Up to 10 Pages", "Mobile Responsive", "Custom Design", "E-commerce Ready", "Advanced SEO", "6 Months Support", "Free Hosting (1 Year)", "WhatsApp API Integration", "Blog Setup", "Priority Support"] },
+];
 
 export default function PricingSection() {
   return (

@@ -3,8 +3,16 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
-import { faqs } from "@/lib/data";
 import { HiOutlineChevronDown } from "react-icons/hi";
+
+const faqs = [
+  { q: "What services does NexGen Digital offer?", a: "We offer a comprehensive range of digital services including Website Design, Web Development, SEO, Digital Marketing, Social Media Marketing, Branding, Graphic Design, Google Ads, WhatsApp API, Email Marketing, Software Development, and Mobile App Development." },
+  { q: "Where is NexGen Digital located?", a: "We are based in Raipur, Chhattisgarh, India, and serve clients all across India." },
+  { q: "How much does a website cost?", a: "Our pricing varies based on the complexity and requirements of the project. We offer affordable plans starting from competitive rates. Contact us for a personalized quote." },
+  { q: "How long does it take to build a website?", a: "Typical website projects take 2-4 weeks depending on the scope. Simple landing pages can be delivered in 5-7 days, while complex web applications may take 6-8 weeks." },
+  { q: "Do you provide hosting and domain services?", a: "Yes, we provide reliable hosting and domain registration services with all our website packages, including SSL certificates and ongoing maintenance." },
+  { q: "What makes NexGen Digital different?", a: "We combine AI-powered strategies with creative expertise to deliver data-driven results. Our focus on quality, timely delivery, and client satisfaction sets us apart." },
+];
 
 export default function FAQSection() {
   const [openId, setOpenId] = useState<number | null>(null);

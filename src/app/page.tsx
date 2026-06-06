@@ -1,14 +1,18 @@
 import Header from "@/components/Header";
 import HeroBanner from "@/components/HeroBanner";
+import ServicesMarquee from "@/components/ServicesMarquee";
 import CompanyIntro from "@/components/CompanyIntro";
 import ServicesGrid from "@/components/ServicesGrid";
+import StatisticsCounter from "@/components/StatisticsCounter";
+import IndustriesServed from "@/components/IndustriesServed";
 import PortfolioShowcase from "@/components/PortfolioShowcase";
-import PricingSection from "@/components/PricingSection";
-import ProcessSection from "@/components/ProcessSection";
+import ClientLogos from "@/components/ClientLogos";
+import TeamMembers from "@/components/TeamMembers";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
-import FAQSection from "@/components/FAQSection";
+import LatestBlogs from "@/components/LatestBlogs";
 import CTABanner from "@/components/CTABanner";
 import ContactForm from "@/components/ContactForm";
+import GoogleMap from "@/components/GoogleMap";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -17,15 +21,19 @@ export default function Home() {
       <Header />
       <main>
         <HeroBanner />
+        <ServicesMarquee />
         <CompanyIntro />
         <ServicesGrid />
+        <StatisticsCounter />
+        <IndustriesServed />
         <PortfolioShowcase />
-        <PricingSection />
-        <ProcessSection />
+        <ClientLogos />
+        <TeamMembers />
         <TestimonialsCarousel />
-        <FAQSection />
+        <LatestBlogs />
         <CTABanner />
         <ContactForm />
+        <GoogleMap />
       </main>
       <Footer />
     </>

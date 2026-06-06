@@ -28,7 +28,7 @@ export default function ContactContent() {
         <div className="absolute inset-0 hero-gradient" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center max-w-3xl mx-auto mb-16">
-            <span className="gradient-text font-semibold text-sm tracking-wider uppercase">Contact Us</span>
+            <span className="text-primary-light font-semibold text-sm tracking-wider uppercase">Contact Us</span>
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mt-3 mb-4">
               Let&apos;s Start a <span className="gradient-text">Conversation</span>
             </h1>
@@ -40,7 +40,7 @@ export default function ContactContent() {
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="space-y-4">
               {[
-                { icon: HiOutlinePhone, title: "Phone", info: ["+91-88399-46717", "+91-94071-70994"], href: "tel:+918839946717" },
+                { icon: HiOutlinePhone, title: "Phone", info: ["+91-94071-70994"], href: "tel:+919407170994" },
                 { icon: HiOutlineMail, title: "Email", info: ["info@nexgendigital.in"], href: "mailto:info@nexgendigital.in" },
                 { icon: HiOutlineLocationMarker, title: "Address", info: ["In front of Kota Stadium", "Kota, Raipur (492010)"], href: "#" },
               ].map((item, i) => (

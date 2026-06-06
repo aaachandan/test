@@ -1,25 +1,21 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #10b981;
-  --color-primary-dark: #059669;
-  --color-primary-light: #34d399;
-  --color-secondary: #0ea5e9;
-  --color-accent: #14b8a6;
-  --color-accent-dark: #0d9488;
-  --color-dark: #0a1628;
-  --color-dark-2: #0f1d35;
-  --color-dark-3: #1a2d4a;
-  --color-dark-4: #243856;
+  --color-primary: #6366f1;
+  --color-primary-dark: #4f46e5;
+  --color-primary-light: #818cf8;
+  --color-secondary: #06b6d4;
+  --color-accent: #a855f7;
+  --color-accent-dark: #9333ea;
+  --color-dark: #0f172a;
+  --color-dark-2: #1e293b;
+  --color-dark-3: #334155;
   --color-light: #f8fafc;
   --color-gray-light: #e2e8f0;
   --font-sans: var(--font-inter);
   --font-heading: var(--font-outfit);
   --animate-scroll: scroll 30s linear infinite;
   --animate-float: float 6s ease-in-out infinite;
-  --animate-pulse-green: pulse-green 2s ease-in-out infinite;
-  --animate-typing: typing 3s steps(30) forwards;
-  --animate-blink: blink 1s step-end infinite;
 }
 
 @keyframes scroll {
@@ -29,21 +25,7 @@
 
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
-}
-
-@keyframes pulse-green {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
-  50% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
+  50% { transform: translateY(-20px); }
 }
 
 body {
@@ -53,25 +35,25 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #10b981, #0ea5e9);
+  background: linear-gradient(135deg, #6366f1, #a855f7, #06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #10b981, #0ea5e9);
+  background: linear-gradient(135deg, #6366f1, #a855f7);
 }
 
 .gradient-bg-dark {
-  background: linear-gradient(135deg, #0a1628, #0f1d35);
+  background: linear-gradient(135deg, #0f172a, #1e293b);
 }
 
 .glassmorphism {
-  background: rgba(15, 29, 53, 0.8);
+  background: rgba(15, 23, 42, 0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .glassmorphism-light {
@@ -81,34 +63,9 @@ body {
 }
 
 .glassmorphism-light:hover {
-  border-color: rgba(16, 185, 129, 0.2);
+  border-color: rgba(99, 102, 241, 0.2);
   background: rgba(255, 255, 255, 0.05);
 }
-
-.terminal-bg {
-  background: #0d1b2a;
-  border: 1px solid #1b2d45;
-  border-radius: 12px;
-}
-
-.terminal-header {
-  background: #1b2d45;
-  border-radius: 12px 12px 0 0;
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.terminal-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.terminal-dot.red { background: #ff5f57; }
-.terminal-dot.yellow { background: #ffbd2e; }
-.terminal-dot.green { background: #28c840; }
 
 .section-padding {
   padding-top: 5rem;
@@ -123,19 +80,18 @@ body {
 }
 
 .hero-gradient {
-  background: radial-gradient(ellipse at top right, rgba(16, 185, 129, 0.08), transparent 50%),
-              radial-gradient(ellipse at bottom left, rgba(14, 165, 233, 0.05), transparent 50%);
+  background: radial-gradient(ellipse at top right, rgba(99, 102, 241, 0.15), transparent 50%),
+              radial-gradient(ellipse at bottom left, rgba(168, 85, 247, 0.1), transparent 50%);
+}
+
+.marquee-container {
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
 
 .grid-pattern {
-  background-image: radial-gradient(rgba(16, 185, 129, 0.06) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(99, 102, 241, 0.08) 1px, transparent 1px);
   background-size: 30px 30px;
-}
-
-.code-line::before {
-  content: "> ";
-  color: #10b981;
-  font-weight: bold;
 }
 
 ::-webkit-scrollbar {
@@ -147,10 +103,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #10b981, #0ea5e9);
+  background: linear-gradient(180deg, #6366f1, #a855f7);
   border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #059669, #0284c7);
 }

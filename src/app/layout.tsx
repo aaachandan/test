@@ -14,40 +14,30 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "Ray Web Services — Design. Develop. Dominate.",
-    template: "%s | Ray Web Services",
+    default: "NexGen Digital — AI Digital Marketing Agency",
+    template: "%s | NexGen Digital",
   },
   description:
-    "Professional website design, development, branding, landing pages and complete digital solutions — crafted for results. Based in Raipur, Chhattisgarh.",
+    "NexGen Digital is a leading AI-driven digital marketing company in Raipur, Chhattisgarh, dedicated to transforming businesses with smart, data-powered strategies.",
   keywords: [
-    "web design",
-    "web development",
-    "Raipur",
-    "Chhattisgarh",
-    "website design",
-    "digital agency",
-    "branding",
+    "digital marketing", "AI marketing", "web development", "SEO",
+    "social media marketing", "branding", "Raipur", "Chhattisgarh",
   ],
-  authors: [{ name: "Ray Web Services" }],
-  creator: "Ray Web Services",
+  authors: [{ name: "NexGen Digital" }],
+  creator: "NexGen Digital",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    siteName: "Ray Web Services",
-    title: "Ray Web Services — Design. Develop. Dominate.",
-    description:
-      "Professional website design, development, branding and digital solutions.",
+    siteName: "NexGen Digital",
+    title: "NexGen Digital — AI Digital Marketing Agency",
+    description: "Leading AI-driven digital marketing company transforming businesses.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ray Web Services — Design. Develop. Dominate.",
-    description:
-      "Professional website design, development, branding and digital solutions.",
+    title: "NexGen Digital — AI Digital Marketing Agency",
+    description: "Leading AI-driven digital marketing company transforming businesses.",
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
@@ -64,10 +54,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Ray Web Services",
-              url: "https://rayservices.netlify.app",
-              description:
-                "Professional digital agency based in Raipur, Chhattisgarh",
+              name: "NexGen Digital",
+              url: "https://nexgendigital.in",
+              description: "AI-driven digital marketing company in Raipur, Chhattisgarh",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Raipur",
@@ -76,9 +65,15 @@ export default function RootLayout({
               },
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+91-7746969000",
+                telephone: "+91-9407170994",
                 contactType: "customer service",
               },
+              sameAs: [
+                "https://facebook.com/nexgendigital",
+                "https://twitter.com/nexgendigital",
+                "https://linkedin.com/company/nexgendigital",
+                "https://instagram.com/nexgendigital",
+              ],
             }),
           }}
         />

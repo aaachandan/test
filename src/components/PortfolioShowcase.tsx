@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
 import { portfolioItems } from "@/lib/data";
-import { HiOutlineExternalLink } from "react-icons/hi";
+
 
 const categories = ["All", ...Array.from(new Set(portfolioItems.map((p) => p.category)))];
 
@@ -68,14 +68,7 @@ export default function PortfolioShowcase() {
                   </div>
                 </div>
                 <div className="p-5">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs text-primary-light font-medium">{item.category}</span>
-                    {item.link && (
-                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary-light transition-colors">
-                        <HiOutlineExternalLink className="w-4 h-4" />
-                      </a>
-                    )}
-                  </div>
+                  <span className="text-xs text-primary-light font-medium mb-2 block">{item.category}</span>
                   <h3 className="text-white font-semibold">{item.title}</h3>
                   <p className="text-gray-400 text-sm mt-1 line-clamp-2">{item.description}</p>
                 </div>

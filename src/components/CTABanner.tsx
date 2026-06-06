@@ -13,20 +13,20 @@ export default function CTABanner() {
             <div className="absolute inset-0 grid-pattern opacity-10" />
             <div className="relative text-center space-y-6">
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-                Ready to Build Your Dream Website?
+                Let&apos;s Make <span className="text-white/90">Digital India!</span>
               </h2>
               <p className="text-white/80 max-w-2xl mx-auto text-lg">
-                Professional websites designed to grow your business and attract more customers. Get started today.
+                Join 350+ businesses that trust NexGen Digital for their digital transformation journey.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <a
-                  href="tel:+917746969000"
+                  href="tel:+919407170994"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors"
                 >
                   Call Now
                 </a>
                 <a
-                  href="https://wa.me/917746969000?text=Hello%20Ray%20DIGI%20Studio!%20I%20want%20to%20start%20my%20project."
+                  href="https://wa.me/919407170994?text=Hello%20NexGen%20Digital!%20I%20want%20to%20start%20my%20project."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
